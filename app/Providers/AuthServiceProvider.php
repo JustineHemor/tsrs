@@ -3,6 +3,10 @@
 namespace App\Providers;
 
 // use Illuminate\Support\Facades\Gate;
+use App\Policies\DriverPolicy;
+use App\Policies\VehiclePolicy;
+use Domain\TripTickets\Models\Driver;
+use Domain\TripTickets\Models\Vehicle;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class AuthServiceProvider extends ServiceProvider
@@ -13,7 +17,8 @@ class AuthServiceProvider extends ServiceProvider
      * @var array<class-string, class-string>
      */
     protected $policies = [
-        //
+        Driver::class => DriverPolicy::class,
+        Vehicle::class => VehiclePolicy::class,
     ];
 
     /**

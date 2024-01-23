@@ -57,19 +57,19 @@
                                 </x-slot>
 
                                 <x-slot name="content">
-                                    <x-dropdown-link href="{{ url('/nova/resources/users') }}">
+                                    <x-dropdown-link href="{{ url('/admin/users') }}">
                                         {{ __('Users') }}
                                     </x-dropdown-link>
 
-                                    <x-dropdown-link href="{{ url('/nova/resources/vehicles') }}">
+                                    <x-dropdown-link href="{{ url('/admin/vehicles') }}">
                                         {{ __('Vehicles') }}
                                     </x-dropdown-link>
 
-                                    <x-dropdown-link href="{{ url('/nova/resources/drivers') }}">
+                                    <x-dropdown-link href="{{ url('/admin/drivers') }}">
                                         {{ __('Drivers') }}
                                     </x-dropdown-link>
 
-                                    <x-dropdown-link href="{{ url('/nova/resources/supply-items') }}">
+                                    <x-dropdown-link href="{{ url('/admin/supply-items') }}">
                                         {{ __('Supply Items') }}
                                     </x-dropdown-link>
                                 </x-slot>
